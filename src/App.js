@@ -11,6 +11,12 @@ import SignIn from './components/auth/SignIn'
 import SignOut from './components/auth/SignOut'
 import ChangePassword from './components/auth/ChangePassword'
 
+import IndexItems from './components/item/Index'
+import CreateItem from './components/item/Create'
+import ShowItem from './components/item/Show'
+import UpdateItem from './components/item/Update'
+import DisplayLanding from './components/item/landing'
+
 class App extends Component {
   constructor (props) {
     super(props)
@@ -44,8 +50,8 @@ class App extends Component {
 
     return (
       <Fragment>
-	      <Header user={user} />
-	      {msgAlerts.map((msgAlert) => (
+        <Header user={user} />
+        {msgAlerts.map((msgAlert) => (
           <AutoDismissAlert
             key={msgAlert.id}
             heading={msgAlert.heading}
@@ -55,8 +61,8 @@ class App extends Component {
             deleteAlert={this.deleteAlert}
           />
         ))}
-	      <main className='container'>
-	        <Route
+        <main className='container'>
+          <Route
             path='/sign-up'
             render={() => (
               <SignUp msgAlert={this.msgAlert} setUser={this.setUser} />
@@ -67,6 +73,18 @@ class App extends Component {
             render={() => (
               <SignIn msgAlert={this.msgAlert} setUser={this.setUser} />
             )}
+          />
+          <AuthenticatedRoute
+            exact
+            user={user}
+            path='/items'
+            render={() => <IndexItems msgAlert={this.msgAlert} user={user} />}
+          />
+          <AuthenticatedRoute
+            exact
+            user={user}
+            path='/items/:id'
+            render={() => <ShowItem msgAlert={this.msgAlert} user={user} />}
           />
           <AuthenticatedRoute
             user={user}
@@ -84,6 +102,24 @@ class App extends Component {
             path='/change-password'
             render={() => (
               <ChangePassword msgAlert={this.msgAlert} user={user} />
+            )}
+          />
+          <AuthenticatedRoute
+            user={user}
+            path='/create-item'
+            render={() => <CreateItem msgAlert={this.msgAlert} user={user} />}
+          />
+          <AuthenticatedRoute
+            user={user}
+            path='/items/:id/update-item'
+            render={() => <UpdateItem msgAlert={this.msgAlert} user={user} />}
+          />
+          <Route
+            exact
+            user={user}
+            path='/'
+            render={() => (
+              <DisplayLanding msgAlert={this.msgAlert} setUser={this.setUser} />
             )}
           />
         </main>
