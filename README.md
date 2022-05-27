@@ -4,9 +4,9 @@
 This is the frontend for our event app titled Thriftility. The app is designed as a tool to research and inventory for merchandizing of second hand clothes and goods. It will allow you to keep track of your inventory as well as to automate researching and pricing of items.
 
 ## Access Online
- To view the frontend repo, [click here]().
+ To view the frontend repo, [click here](https://github.com/jrowla2/thriftility-client).
  
- To view the deployed app, [click here]()
+ To view the deployed app, [click here](https://jrowla2.github.io/thriftility-client/)
  
 ## Planning
 In the planning of this application, a wireframe was needed to help visualize the project.
@@ -19,8 +19,8 @@ In the planning of this application, a wireframe was needed to help visualize th
 - As a user, I want to update an item.
 - As a user, I want to delete an item.
 - As a user, I want to see all my items.
-- As a user, I want my items sorted in some informative way.
-- As a user, I want to search using data inputs for both google brand domain and google ebay listings.
+- As a user, I want my items sorted in some informative way. (v2)
+- As a user, I want to search using data inputs for both google brand domain and google ebay listings. (v2)
 
 ## Using Locally & Making Contributions
 
@@ -38,17 +38,3 @@ In the planning of this application, a wireframe was needed to help visualize th
 - Axios
 - Bootstrap
 - JavaScript
-
-## Unsolved Problems for Future Iterations
-* Date will be based off user timezone instead of UTC
-* Allow users to cancel their RSVP status
-* Allow users to share an event
-* Allow users to send out messages to all RSVP'd users
-* Allow users to invite other users to events
-* Allow users to upload an image when creating an event
-* Allow users to search for events based on location/ dates
-* Allow users to see who has rsvp’d to an event
-* Allow users to create a public or private event
-* Allow users to add comments to events
-* Allow users to send a message to the event host (owner)
-  
