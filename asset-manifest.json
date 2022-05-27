@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/thriftility-client/static/css/main.84947c99.chunk.css",
-    "main.js": "/thriftility-client/static/js/main.5c005df4.chunk.js",
-    "main.js.map": "/thriftility-client/static/js/main.5c005df4.chunk.js.map",
+    "main.js": "/thriftility-client/static/js/main.a522af7c.chunk.js",
+    "main.js.map": "/thriftility-client/static/js/main.a522af7c.chunk.js.map",
     "runtime-main.js": "/thriftility-client/static/js/runtime-main.a67ec1e1.js",
     "runtime-main.js.map": "/thriftility-client/static/js/runtime-main.a67ec1e1.js.map",
     "static/js/2.df3dce8e.chunk.js": "/thriftility-client/static/js/2.df3dce8e.chunk.js",
@@ -15,6 +15,6 @@
     "static/js/runtime-main.a67ec1e1.js",
     "static/js/2.df3dce8e.chunk.js",
     "static/css/main.84947c99.chunk.css",
-    "static/js/main.5c005df4.chunk.js"
+    "static/js/main.a522af7c.chunk.js"
   ]
 }
