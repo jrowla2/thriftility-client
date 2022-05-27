@@ -1,1 +1,130 @@
 @import '~bootstrap/scss/bootstrap';
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@1,300&display=swap');
+
+body {
+    background-image: url('');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.main-content {
+    margin-top: 0;
+    background-color: #f9f6f1;
+    padding: 20px 40px;
+}
+
+.name-style {
+    color: white;
+    margin: 0 50px;
+    letter-spacing: 3px;
+    font-family: 'Kanit', sans-serif;
+    font-style: italic;
+    font-weight: 300;
+    font-size: 50px
+}
+
+a {
+    text-decoration: none;
+}
+
+.nav-link {
+    letter-spacing: 2px;
+    margin: 0 20px;
+}
+
+.item-link {
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #090804;
+}
+
+.item-link:hover {
+    color: #090804;
+}
+
+.page-title {
+    padding: 20px 0;
+    color: #46494c;
+    text-transform: uppercase;
+    letter-spacing: 6px;
+    margin: 30px 0;
+    text-align: center;
+    border-bottom: 1px solid #64b6ac
+}
+
+form label {
+    letter-spacing: 2px;
+}
+
+.btn-primary {
+    padding: 14px 30px;
+    margin: 20px 5px;
+    background-color: #d7511b;
+    border: none;
+}
+
+.btn-primary:hover {
+    background-color: #4e8098;
+}
+
+.item-title {
+    width: 50%;
+    background-color: #dbc8a9;
+    text-transform: uppercase;
+    letter-spacing: 6px;
+    text-align: center;
+    margin: auto;
+    margin-top: 5%;
+    padding: 2% 0;
+    border: 1px solid #dcdcdd;
+}
+
+.item-details {
+    border: 1px solid #dcdcdd;
+    background-color: whitesmoke;
+    margin: auto;
+    width: 50%;
+    padding: 4%;
+}
+
+.item-details-title {
+    text-decoration: underline;
+    letter-spacing: 2px;
+}
+
+.hero-img {
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    object-fit: cover;
+    position: relative;
+    margin-bottom: -130px;
+}
+
+.main-img {
+    margin: auto;
+    width: fill;
+    max-width: 650;
+    background-position: center;
+    background-repeat: no-repeat;
+    object-fit: cover;
+    position: relative;
+    margin-bottom: 40px;
+}
+
+@media only screen and (min-width: 1000px) {
+    .main-img {
+        object-fit: contain;
+        max-height: 1200px;
+    }
+}
+
+.form-box {
+    border: 1px solid #dcdcdd;
+    background-color: whitesmoke;
+    margin: auto;
+    width: 60%;
+    padding: 2%;
+    margin-top: 5%;
+}
